@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="de">
+<head>
+    <title>Produktdetails</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../produktdb-stil.css">
+</head>
+<body>
+
+    <h1>
+        Produkt:
+        <span th:text="${produktTitel}"></span>
+    </h1>
+
+    <p>
+        Nummer:
+        <span th:text="${produktNummer}"></span>
+    </p>
+
+    <h3>Beschreibung:</h3>
+    <p th:text="${produktBeschreibung}"></p>
+
+    <h3>Preis:</h3>
+    <p th:if="${produktPreis != null}" th:text="${produktPreis} + ' €'"></p>
+    <p th:unless="${produktPreis != null}">derzeit nicht lieferbar</p>
+
+</body>
