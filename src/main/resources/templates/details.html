@@ -13,15 +13,19 @@
     </h1>
 
     <p>
-        Nummer:
+        <strong>Nummer:</strong>
         <span th:text="${produktNummer}"></span>
     </p>
 
-    <h3>Beschreibung:</h3>
-    <p th:text="${produktBeschreibung}"></p>
+    <p>
+        <strong>Beschreibung:</strong>
+        <span th:text="${produktBeschreibung}"></span>
+    </p>
 
-    <h3>Preis:</h3>
-    <p th:if="${produktPreis != null}" th:text="${produktPreis} + ' €'"></p>
-    <p th:unless="${produktPreis != null}">derzeit nicht lieferbar</p>
+    <p>
+        <strong>Preis:</strong>
+        <span th:if="${produktPreis >= 0.0}" th:text="${produktPreis} + ' €'"></span>
+        <span th:unless="${produktPreis >= 0.0}">derzeit nicht lieferbar</span>
+    </p>
 
 </body>

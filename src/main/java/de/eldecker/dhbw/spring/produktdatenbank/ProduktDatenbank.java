@@ -49,7 +49,7 @@ public class ProduktDatenbank {
 			new ProduktRecord( 333,
                 			   "Feierabendschablone",
                 				"Unverzichtbares Utensil für jede Behörde",
-                				9.10 )
+                				9.95 )
 		);
 
 		hinzufuegen(
