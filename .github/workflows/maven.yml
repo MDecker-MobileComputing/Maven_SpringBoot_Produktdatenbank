@@ -24,6 +24,6 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: Produkdatenbank-FatJar
-        path: target/sla-*.jar
+        path: target/produktdatenbank-*.jar
         if-no-files-found: error # Default-Wert ist (nur) "warn"; es gibt auch noch "ignore"
         retention-days: 3
