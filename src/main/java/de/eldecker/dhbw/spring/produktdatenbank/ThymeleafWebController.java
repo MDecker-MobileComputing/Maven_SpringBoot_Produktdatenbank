@@ -22,8 +22,8 @@ public class ThymeleafWebController {
     }
 
 
-    public String slaWertUmrechnen( @PathVariable int produktnummer,
-                                    Model model ) {
+    public String produktAnzeigen( @PathVariable int produktnummer,
+                                   Model model ) {
 
     	return "";
     }
