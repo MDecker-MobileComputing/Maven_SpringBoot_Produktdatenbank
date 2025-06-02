@@ -1,39 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project 
-    xmlns="http://maven.apache.org/POM/4.0.0" 
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-    
+
     <modelVersion>4.0.0</modelVersion>
-    
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.0</version>
+        <version>3.4.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    
+
     <groupId>de.eldecker.dhbw.spring</groupId>
     <artifactId>produktdatenbank</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    
+
     <name>Produktdatenbank</name>
     <description>Rechnerübung für Thymeleaf-Templates</description>
     <url>https://github.com/MDecker-MobileComputing/Maven_SpringBoot_Produktdatenbank</url>
-    <inceptionYear>2024</inceptionYear>    
-    
+    <inceptionYear>2024</inceptionYear>
+
     <licenses>
       <license>
         <name>BSD 3-Clause License</name>
         <url>https://opensource.org/license/BSD-3-clause/</url>
       </license>
     </licenses>
-    
+
     <properties>
-        <java.version>23</java.version>
+        <java.version>21</java.version>
     </properties>
-    
+
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -48,6 +49,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <build>
