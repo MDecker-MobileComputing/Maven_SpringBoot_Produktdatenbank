@@ -24,7 +24,6 @@ public class ThymeleafWebController {
 
     public String produktAnzeigen( @PathVariable int produktnummer,
                                    Model model ) {
-
     	return "";
     }
 
