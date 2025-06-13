@@ -1,5 +1,6 @@
-package de.eldecker.dhbw.spring.produktdatenbank;
+package de.eldecker.dhbw.spring.produktdatenbank.db;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
  * Ein Objekt dieser Record-Klasse repräsentiert ein Produkt in der Produkt-Datenbank.
@@ -23,6 +24,7 @@ public record ProduktRecord( int produktNummer,
      *
      * @return {@code true} gdw. das Produkt aktuell lieferbar ist, der Preis also nicht negativ ist
      */
+	@JsonIgnore
     public boolean istNichtVerfuegbar() {
 
         return preis < 0.0;

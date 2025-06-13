@@ -1,4 +1,4 @@
-package de.eldecker.dhbw.spring.produktdatenbank;
+package de.eldecker.dhbw.spring.produktdatenbank.db;
 
 import java.util.HashMap;
 import java.util.Map;
