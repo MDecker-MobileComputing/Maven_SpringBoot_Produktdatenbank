@@ -52,7 +52,9 @@ public class ProduktRestController {
      * 
      * @param produktNr Produktnummer
      * 
-     * @return Status-Code 200 wenn gefunden, sonst Status-Code 400 
+     * @return Status-Code 200 wenn gefunden, sonst Status-Code 400;
+     *         Beispiele für Beispielantworten:
+     *         https://gist.github.com/MDecker-MobileComputing/9149c81b7292b420bdd4c318d2b43d36 
      */
     @GetMapping( "/abfrage/{produktNr}" )
     public ResponseEntity<ProduktRecord> queryProdukt( @PathVariable int produktNr ) {
