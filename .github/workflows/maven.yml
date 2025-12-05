@@ -7,13 +7,14 @@ on:
 jobs:
   job-fatjar:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
     - name: Git-Repo auschecken
       uses: actions/checkout@v4
     - name: JDK einrichten
       uses: actions/setup-java@v4
       with:
-        java-version: '23'
+        java-version: '25'
         distribution: 'temurin'
         cache: maven
     - name: Permission-Bit für Maven-Wrapper setzen
