@@ -2,6 +2,7 @@ package de.eldecker.dhbw.spring.produktdatenbank.db;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+
 /**
  * Ein Objekt dieser Record-Klasse repräsentiert ein Produkt in der Produkt-Datenbank.
  *
@@ -17,7 +18,7 @@ public record ProduktRecord( int produktNummer,
 		                     String produktTitel,
 		                     String produktBeschreibung,
 		                     double preis
-		                    ) {
+		                   ) {
 
     /**
      * Überprüfen, ob das Produkt aktuell lieferbar ist
